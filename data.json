@@ -1,0 +1,34 @@
+[
+{
+    "fullName" : "Phú cường",
+    "email" : "cv9cuong@gmail.com",
+    "mobile" : "09867328",
+    "city" : "TP HCM"
+},
+{
+    "fullName" : "Messi",
+    "email" : "messi@gmail.com",
+    "mobile" : "283478",
+    "city" : "Barcelona"
+},
+
+{
+    "fullName" : "Ronaldo",
+    "email" : "cr7@gmail.com",
+    "mobile" : "928300",
+    "city" : "Juve"
+},
+
+{
+    "fullName" : "Halaand",
+    "email" : "hl@gmail.com",
+    "mobile" : "200192838",
+    "city" : "Noname"
+},
+{
+    "fullName" : "Bảo",
+    "email" : "bao@gmail.com",
+    "mobile" : "359844917",
+    "city" : "Quận Thủ Đức"
+}
+]

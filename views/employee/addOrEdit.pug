@@ -1,0 +1,25 @@
+extends ../layouts/main.pug
+block content
+	h3= 'Insert Form'
+	form(action='/employees', method='POST', autocomplete='off')
+		input(type='hidden', name='EmID', value=`${em ? em._id : ''}`)
+		.form-group
+			label
+			input.form-control(type='text', name='fullName', placeholder='Full Name', value=`${em ? em.fullName : ''}`)
+		.text-danger= fullNameError
+		.form-group
+			label= Email
+			input.form-control(type='text', name='email', placeholder='Email', value=`${em ? em.email : ''}`)
+			.text-danger= emailError
+		.form-row
+			.form-group.col-md-6
+				label= Mobile
+				input.form-control(type='text', name='mobile', placeholder='Mobile', value=`${em ? em.mobile : ''}`)
+			.form-group.col-md-6
+				label= City
+				input.form-control(type='text', name='city', placeholder='City', value=`${em ? em.city : ''}`)
+		.form-group
+			button.btn.btn-info(type='submit')
+				i.fa.fa-database= 'Submit'
+			a.btn.btn-secondary(href='/employees/list')
+				i.fa.fa-list-alt= 'View'

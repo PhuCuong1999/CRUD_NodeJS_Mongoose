@@ -1,0 +1,27 @@
+extends ../layouts/main.pug
+block content
+	h3
+		a.btn.btn-secondary(href='/employees')
+			i.fa.fa-plus
+			|  Create New
+		|  Employee List
+	table.table.table-striped
+		thead
+			tr
+				th Full Name
+				th Email
+				th Mobile
+				th City
+				th
+		tbody
+			each val in list
+				tr
+					td= val.fullName
+					td= val.email
+					td= val.mobile
+					td= val.city
+					td
+						a(href=`/employees/${val._id}`)
+							i.fa.fa-pencil.fa-lg(aria-hidden='true',style='margin-right:20px')
+						a(href=`/employees/delete/${val._id}`, onclick="return confirm('Are you sure to delete this record ?');")
+							i.fa.fa-trash.fa-lg(aria-hidden='true')
